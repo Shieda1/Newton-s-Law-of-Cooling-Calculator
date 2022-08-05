@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newton's Law of Cooling Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="objectstemperatureattimeRadio" name="variables" checked disabled>
+  <label for="objectstemperatureattimeRadio">Object's temperature at time</label>
+
+  <input type="radio" id="surroundingTemperatureRadio" name="variables" disabled>
+  <label for="surroundingTemperatureRadio">Surrounding Temperature</label>
+
+  <input type="radio" id="objectsInitialTemperatureRadio" name="variables" disabled>
+  <label for="objectsInitialTemperatureRadio">Object's Initial Temperature</label>
+
+  <input type="radio" id="coreTemperatureRadio" name="variables" disabled>
+  <label for="coreTemperatureRadio">Core Temperature</label>
+
+  <input type="radio" id="timeRadio" name="variables" disabled>
+  <label for="timeRadio">Time</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(Ts) Surrounding Temperature</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(To) Object's Initial Temperature</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(T) Core Temperature</label>
+  <input type="number" id="v3"><br><br>
+  
+  <label for="v4" id="variable4">(t) Time</label>
+  <input type="number" id="v4"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
